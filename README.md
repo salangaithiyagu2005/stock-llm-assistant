@@ -50,7 +50,7 @@ venv\Scripts\activate
 ### 🐧 On Git Bash / Linux / WSL:
 
 ```bash
-/c/Users/YourName/AppData/Local/Programs/Python/Python311/python -m venv venv
+/c/Users/Arun/AppData/Local/Programs/Python/Python311/python -m venv venv
 source venv/Scripts/activate
 ```
 
@@ -94,7 +94,8 @@ python update_history.py
 ## 🧠 5. Train LSTM Model (per stock)
 
 ```bash
-python ml/train_lstm_model.py
+python -m ml.train_lstm_model
+
 ```
 
 This trains a deep learning model using last **60 days** of:
@@ -160,3 +161,5 @@ ollama list
 ## 💬 Need Help?
 
 Paste your Python version and any error for quick help.
+
+pip freeze > requirements.txt

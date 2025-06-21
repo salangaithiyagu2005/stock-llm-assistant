@@ -1,5 +1,10 @@
-yfinance
-beautifulsoup4
-requests
-plyer
-httpx
+yfinance==0.2.63
+beautifulsoup4==4.13.4
+requests==2.32.4
+plyer==2.1.0
+httpx==0.28.1
+pandas==2.3.0
+numpy==1.26.4
+scikit-learn==1.7.0
+tensorflow==2.15.0
+joblib==1.5.1
