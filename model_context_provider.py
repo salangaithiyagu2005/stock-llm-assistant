@@ -1,53 +1,45 @@
+import os
 import json
-from datetime import datetime
-from typing import Optional, List
 
-class ModelContextProvider:
-    def __init__(self, storage_file='trade_log.json'):
-        self.storage_file = storage_file
-        try:
-            with open(self.storage_file, 'r') as f:
-                self.trades = json.load(f)
-        except (FileNotFoundError, json.JSONDecodeError):
-            self.trades = []
+TRADE_LOG_PATH = "data/trade_log.json"
+NEWS_PATH = "data/news.json"
 
-    def save(self):
-        with open(self.storage_file, 'w') as f:
-            json.dump(self.trades, f, indent=2)
+def safe_load_json(path, default):
+    if not os.path.exists(path):
+        return default
 
-    def add_trade(self, symbol: str, action: str, price: float, quantity: int, status: str = "open", news: Optional[List[str]] = None, note: Optional[str] = None):
-        trade = {
-            "date": datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-            "symbol": symbol.upper(),
-            "action": action.upper(),
-            "price": round(price, 2),
-            "quantity": quantity,
-            "status": status,
-            "news": news or [],
-            "note": note
-        }
-        self.trades.append(trade)
-        self.save()
+    try:
+        with open(path, "r") as f:
+            content = f.read().strip()
+            if not content:
+                return default
+            data = json.loads(content)
+            return data
+    except Exception as e:
+        print(f"⚠️ Failed to load {path}: {e}")
+        return default
 
-    def close_trade(self, symbol: str, exit_price: float):
-        for trade in reversed(self.trades):
-            if trade["symbol"] == symbol.upper() and trade["status"] == "open":
-                trade["exit_price"] = round(exit_price, 2)
-                trade["status"] = "closed"
-                trade["profit"] = round((exit_price - trade["price"]) * trade["quantity"], 2)
-                break
-        self.save()
+def get_trade_context() -> str:
+    trades = safe_load_json(TRADE_LOG_PATH, [])
 
-    def get_recent_trades(self, n=5):
-        return self.trades[-n:]
+    if not isinstance(trades, list) or not trades:
+        return "No past trades found."
 
-    def get_context_summary(self, n=5):
-        trades = self.get_recent_trades(n)
-        context = []
-        for t in trades:
-            summary = (
-                f"{t['date']} - {t['symbol']} {t['action']} @ {t['price']} x {t['quantity']}"
-                + (f" -> EXIT @ {t['exit_price']}, P&L: ₹{t['profit']}" if t.get("exit_price") else "")
-            )
-            context.append(summary)
-        return "\n".join(context)
+    summary = []
+    for trade in trades:
+        summary.append(
+            f"{trade['date']} - {trade['action']} {trade['symbol']} at ₹{trade['price']}"
+        )
+    return "\n".join(summary)
+
+def get_news_summary(symbol: str) -> str:
+    news = safe_load_json(NEWS_PATH, {})
+
+    if not isinstance(news, dict):
+        return f"No news found for {symbol}."
+
+    stock_news = news.get(symbol, [])
+    if not stock_news:
+        return f"No news found for {symbol}."
+
+    return "\n".join(f"- {item}" for item in stock_news)
