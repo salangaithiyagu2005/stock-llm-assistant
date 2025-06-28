@@ -42,4 +42,5 @@ def get_news_summary(symbol: str) -> str:
     if not stock_news:
         return f"No news found for {symbol}."
 
-    return "\n".join(f"- {item}" for item in stock_news)
+    # Show date and headline for each news item
+    return "\n".join(f"- [{item['date']}] {item['headline']}" for item in stock_news)

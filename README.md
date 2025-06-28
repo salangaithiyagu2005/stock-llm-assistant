@@ -43,15 +43,20 @@ A full offline, private stock assistant that:
 ### 💻 On Windows CMD:
 
 ```cmd
-C:\Users\YourName\AppData\Local\Programs\Python\Python311\python.exe -m venv venv
-venv\Scripts\activate
+"C:\Users\YourName\AppData\Local\Programs\Python\Python311\python.exe" -m venv venv
+venv\Scripts\activate.bat
 ```
 
 ### 🐧 On Git Bash / Linux / WSL:
 
 ```bash
 /c/Users/Arun/AppData/Local/Programs/Python/Python311/python -m venv venv
-source venv/Scripts/activate
+source ./venv/Scripts/activate
+```
+## exit from virutal environment
+
+```bash
+deactivate
 ```
 
 ---
@@ -149,17 +154,47 @@ ollama list
 
 ---
 
-## 🔁 To Do / Expand
+## 🚀 Automated LLM Fine-Tuning Data Collection
 
-- [ ] Add chart display
-- [ ] Backtesting support
-- [ ] Fine-tune custom model using your JSON history
-- [ ] Signal generation (Buy/Sell alert triggers)
+- Every prediction and its outcome is logged for LLM fine-tuning in `llm_finetune_data/`.
+- Over time, this builds a dataset for fine-tuning your Ollama LLM to your trading style.
+- To fine-tune:
+  1. Combine your `.jsonl` files if needed.
+  2. Run:
+     ```bash
+     ollama create my-finetuned-model -f llm_finetune_data/ALL_YOUR_DATA.jsonl --base llama3.2
+     ```
+  3. Update your app to use your new model name.
+- The more you use the app, the smarter your LLM can become!
 
 ---
 
-## 💬 Need Help?
+## 🧠 Automated Model Self-Improvement
 
-Paste your Python version and any error for quick help.
+- Every prediction is saved and checked against actual closes.
+- If prediction error is high, retraining is suggested (and can be automated).
+- This keeps your LSTM model accurate and up-to-date.
 
-pip freeze > requirements.txt
+---
+
+## 🛠️ Requirements (additions)
+- `pandas_ta` for technical indicators (auto-installed)
+- Ollama for local LLMs and fine-tuning
+
+---
+
+## 📝 Example: Running and Logging
+
+```bash
+python ml/predict.py CANBK.NS 60
+```
+- Saves predictions, technicals, and logs for LLM fine-tuning.
+- After a trading day, actual closes and retraining actions are logged for future LLM improvement.
+
+---
+
+## 📈 Long-Term Use
+- The more you use the app, the more personalized and accurate your LLM and LSTM models become.
+- Fine-tune your LLM periodically for best results.
+
+---

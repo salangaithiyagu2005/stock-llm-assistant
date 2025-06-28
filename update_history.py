@@ -5,7 +5,7 @@ import json
 import yfinance as yf
 from datetime import datetime
 
-WATCHLIST_FILE = "watchlist.json"
+WATCHLIST_FILE = "data/watchlist.json"
 HISTORY_DIR = "stock_history"
 
 if not os.path.exists(HISTORY_DIR):

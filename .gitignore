@@ -2,3 +2,8 @@ venv/
 __pycache__/
 *.pyc
 trade_log.json
+ml/trained_models/*
+build/*
+predictions/
+llm_finetune_data/
+dist/*

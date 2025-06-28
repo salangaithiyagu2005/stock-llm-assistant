@@ -1,0 +1,108 @@
+
+Date: 2025-06-28
+Stock: IDFCFIRSTB.NS
+Last Close: ₹71.9000015258789
+Predicted Next Close (LSTM): ₹69.55
+Predicted Next Week Close: ₹69.96
+Predicted End-of-Month Close: ₹69.93
+
+Technical Indicators:
+- RSI: 61.46
+- 20-day MA: 70.23
+- 50-day MA: 68.34
+- Support: 66.8
+- Resistance: 72.31
+
+Recent News:
+No news found for IDFCFIRSTB.NS.
+
+Your Past Trades:
+2025-04-22 - BUY SAIL.NS at ₹116.5
+2024-10-23 - BUY SAIL.NS at ₹118.5
+2024-10-21 - BUY SAIL.NS at ₹126.5
+2024-08-13 - BUY SAIL.NS at ₹130.0
+2024-08-05 - BUY SAIL.NS at ₹137.0
+2024-07-16 - BUY SAIL.NS at ₹152.3
+2025-05-28 - BUY PNB.NS at ₹101.98
+2025-04-24 - BUY PNB.NS at ₹102.8
+2024-10-10 - BUY PNB.NS at ₹103.9
+2024-10-01 - BUY PNB.NS at ₹105.0
+2024-09-09 - BUY PNB.NS at ₹107.9
+2024-09-05 - BUY PNB.NS at ₹112.3
+2024-08-16 - BUY PNB.NS at ₹112.0
+2024-07-10 - BUY PNB.NS at ₹119.0
+2024-06-25 - BUY PNB.NS at ₹123.8
+2024-06-21 - BUY PNB.NS at ₹126.5
+2024-06-04 - BUY PNB.NS at ₹118.85
+2024-05-13 - BUY PNB.NS at ₹123.0
+2024-05-07 - BUY PNB.NS at ₹122.5
+2024-05-03 - BUY PNB.NS at ₹135.5
+2024-05-02 - BUY PNB.NS at ₹138.0
+2025-06-10 - BUY LEMONTREE.NS at ₹141.0
+2024-11-04 - BUY IOC.NS at ₹141.0
+2024-10-23 - BUY IOC.NS at ₹155.0
+2024-09-03 - BUY IOC.NS at ₹177.5
+2025-04-22 - BUY IDFCFIRSTB.NS at ₹67.8
+2024-09-05 - BUY IDFCFIRSTB.NS at ₹75.0
+2024-07-09 - BUY IDFCFIRSTB.NS at ₹79.5
+2024-06-19 - BUY IDFCFIRSTB.NS at ₹81.0
+2024-05-22 - BUY IDFCFIRSTB.NS at ₹77.0
+2024-04-24 - BUY IDFCFIRSTB.NS at ₹83.35
+2024-02-06 - BUY IDFCFIRSTB.NS at ₹83.0
+2024-01-30 - BUY IDFCFIRSTB.NS at ₹82.9
+2024-01-23 - BUY IDFCFIRSTB.NS at ₹82.8
+2024-01-17 - BUY IDFCFIRSTB.NS at ₹86.4
+2024-01-10 - BUY IDFCFIRSTB.NS at ₹83.4
+2024-01-08 - BUY IDFCFIRSTB.NS at ₹85.8
+2024-01-05 - BUY IDFCFIRSTB.NS at ₹86.5
+2024-01-03 - BUY IDFCFIRSTB.NS at ₹86.0
+2024-01-02 - BUY IDFCFIRSTB.NS at ₹86.0
+2023-12-29 - BUY IDFCFIRSTB.NS at ₹88.1
+2023-12-29 - BUY IDFCFIRSTB.NS at ₹88.1
+2023-12-13 - BUY IDFCFIRSTB.NS at ₹87.3
+2023-12-01 - BUY IDFCFIRSTB.NS at ₹85.8
+2023-11-30 - BUY IDFCFIRSTB.NS at ₹84.8
+2023-11-09 - BUY IDFCFIRSTB.NS at ₹84.3
+2023-11-08 - BUY IDFCFIRSTB.NS at ₹83.65
+2023-10-04 - BUY IDFCFIRSTB.NS at ₹91.8
+2023-09-25 - BUY IDFCFIRSTB.NS at ₹93.1
+2023-09-22 - BUY IDFCFIRSTB.NS at ₹93.85
+2023-09-22 - BUY IDFCFIRSTB.NS at ₹94.05
+2023-09-08 - BUY IDFCFIRSTB.NS at ₹95.35
+2025-05-19 - BUY IDEA.NS at ₹7.0
+2025-05-06 - BUY IDEA.NS at ₹6.9
+2025-04-30 - BUY IDEA.NS at ₹7.1
+2025-04-22 - BUY IDEA.NS at ₹8.0
+2025-04-22 - BUY IDEA.NS at ₹8.0
+2025-04-22 - BUY IDEA.NS at ₹8.0
+2025-04-22 - BUY IDEA.NS at ₹8.0
+2025-03-20 - BUY IDEA.NS at ₹7.35
+2025-03-10 - BUY IDEA.NS at ₹7.5
+2025-03-07 - BUY IDEA.NS at ₹7.7
+2025-03-06 - BUY IDEA.NS at ₹7.8
+2025-03-06 - BUY IDEA.NS at ₹7.8
+2025-03-05 - BUY IDEA.NS at ₹7.7
+2024-10-23 - BUY IDEA.NS at ₹8.26
+2024-10-14 - BUY IDEA.NS at ₹9.1
+2024-10-04 - BUY IDEA.NS at ₹9.8
+2024-10-01 - BUY IDEA.NS at ₹10.3
+2024-09-04 - BUY IDEA.NS at ₹14.9
+2024-08-13 - BUY IDEA.NS at ₹15.5
+2024-08-13 - BUY IDEA.NS at ₹15.5
+2024-07-10 - BUY IDEA.NS at ₹17.0
+2025-06-10 - BUY CANBK.NS at ₹117.5
+
+---
+INSTRUCTIONS:
+You are advising a swing/position trader who is NOT a daily trader and prefers to hold and average down rather than exit quickly. Only recommend 'Exit' in extreme or long-term negative scenarios. If the prediction is negative, suggest if and how to average down, and under what conditions to consider exiting. Focus on patient, long-term strategies.
+
+1. Analyze the above data and provide your recommendation in the following format:
+
+Action: <Buy/Hold/Average/Exit> (first line, single word)
+Confidence: <0-100> (second line, integer only)
+Rationale: (2-3 sentences, concise, actionable, and specific for a non-daily trader)
+
+2. Then, provide a summary table with these columns: Factor | Value | Impact (Positive/Negative/Neutral)
+   - Include: Last Close, Predicted Next Close, Predicted Next Week, Predicted Month, RSI, MA20, MA50, Support, Resistance, Recent News Sentiment, Trade History Summary
+
+3. Be direct, avoid generic disclaimers, and focus on actionable advice for a patient, non-daily trader.

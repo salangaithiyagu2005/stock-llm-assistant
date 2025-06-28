@@ -2,12 +2,13 @@ import tkinter as tk
 from tkinter import ttk, messagebox, simpledialog
 from llm_agent import suggest_trade
 from ml.predict import predict_next_close
+from stock_data import download_all_news
 import json
 import subprocess
 import os
 import sys
 
-WATCHLIST_FILE = "watchlist.json"
+WATCHLIST_FILE = "data/watchlist.json"
 
 class StockLLMAssistantApp:
     def __init__(self, root):
@@ -108,6 +109,8 @@ class StockLLMAssistantApp:
             messagebox.showwarning("Missing", "Please select a stock symbol")
             return
         try:
+            # Download news for all stocks before prediction
+            download_all_news()
             predicted = predict_next_close(symbol)
             last_close = self.get_last_close(symbol)
             response = suggest_trade(symbol, last_close)

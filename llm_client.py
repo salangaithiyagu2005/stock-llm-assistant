@@ -13,7 +13,8 @@ async def ask_llm(prompt: str) -> str:
 
     try:
         async with httpx.AsyncClient() as client:
-            response = await client.post(OLLAMA_API, json=payload, headers=headers, timeout=60)
+            # Set timeout=None to wait indefinitely for LLM response
+            response = await client.post(OLLAMA_API, json=payload, headers=headers, timeout=None)
 
             # 🔍 Print status + raw text
             print("🔁 Status Code:", response.status_code)

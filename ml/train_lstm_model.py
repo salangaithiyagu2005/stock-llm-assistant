@@ -57,9 +57,9 @@ def train_model(symbol: str, window=60, epochs=20, batch_size=32):
 if __name__ == "__main__":
     # Load watchlist.json from project root
     project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-    watchlist_path = os.path.join(project_root, "watchlist.json")
+    watchlist_path = os.path.join(project_root, "data/watchlist.json")
     if not os.path.exists(watchlist_path):
-        print(f"❌ watchlist.json not found at {watchlist_path}")
+        print(f"❌ data/watchlist.json not found at {watchlist_path}")
     else:
         with open(watchlist_path, "r") as f:
             try:
